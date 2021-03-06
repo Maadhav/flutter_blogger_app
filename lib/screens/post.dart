@@ -38,7 +38,7 @@ class _PostState extends State<Post> {
             Hero(
               tag: 'thumbnail${widget.post.id}',
               child: Thumbnail(
-                imageUrl: HtmlService().extractImage(widget.post.content),
+                imageUrl: HtmlService.extractImage(widget.post.content),
               ),
             ),
             Hero(
@@ -51,7 +51,7 @@ class _PostState extends State<Post> {
               ),
             ),
             DropCapText(
-              HtmlService().extractText(widget.post.content),
+              HtmlService.extractText(widget.post.content),
               style: TextStyle(
                 color: Color(0xff4F4F4F),
                 fontSize: 16,

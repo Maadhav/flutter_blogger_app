@@ -2,8 +2,8 @@ import 'package:flutter_blogger_app/data/models.dart';
 import 'package:flutter_blogger_app/utils/constans.dart';
 import 'package:http/http.dart' as http;
 
-class BloggerApi {
-  Future<BloggerModel> getPosts() async {
+class BloggerService {
+  static Future<BloggerModel> get posts async {
     var request = http.Request(
         'GET',
         Uri.parse(
