@@ -22,7 +22,7 @@ class Thumbnail extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(15),
-        child: Image.network(imageUrl,fit: BoxFit.fitWidth,),
+        child: Image.network(imageUrl,fit: BoxFit.fitWidth,errorBuilder: (context, error, stackTrace) => Image.network('https://cdn.shopify.com/s/files/1/1856/9187/articles/b2.jpg'),),
       ),
     );
   }
