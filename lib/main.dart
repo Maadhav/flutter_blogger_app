@@ -1,7 +1,7 @@
 import 'package:flutter_blogger_app/screens/home.dart';
 import 'package:flutter/material.dart';
 
-Future<void> main() async {
+void main() {
   runApp(MyApp());
 }
 
